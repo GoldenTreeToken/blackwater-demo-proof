@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Atlas Forge — Smart Desk Essentials</title>
+
+<style>
+:root{
+  --bg:#08111f;
+  --panel:#122238;
+  --panel-hover:#182d49;
+  --border:#294966;
+  --text:#eef7ff;
+  --muted:#9bb8d2;
+  --accent:#62d5ff;
+  --accent-dark:#0d89b8;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  margin:0;
+  background:
+    radial-gradient(circle at top left,#102b46 0%,transparent 35%),
+    var(--bg);
+  color:var(--text);
+  min-height:100vh;
+}
+
+main{
+  max-width:1000px;
+  margin:auto;
+  padding:56px 20px 72px;
+}
+
+header{
+  max-width:700px;
+}
+
+.badge{
+  display:inline-block;
+  padding:6px 11px;
+  border:1px solid #315b79;
+  border-radius:999px;
+  color:var(--accent);
+  background:#0e2033;
+  font-size:13px;
+  font-weight:700;
+}
+
+h1{
+  margin:18px 0 10px;
+  font-size:clamp(38px,7vw,64px);
+  line-height:1;
+  letter-spacing:-2px;
+}
+
+.intro{
+  margin:0;
+  max-width:650px;
+  color:var(--muted);
+  font-size:18px;
+  line-height:1.7;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
+  margin-top:42px;
+}
+
+.card{
+  background:linear-gradient(145deg,var(--panel),#0f1d30);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:18px;
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    background .2s ease;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  background:var(--panel-hover);
+  border-color:#3b7196;
+}
+
+.image{
+  height:150px;
+  border-radius:13px;
+  background:
+    radial-gradient(circle at 50% 25%,#315676,#182e47 70%);
+  display:grid;
+  place-items:center;
+  font-size:58px;
+  margin-bottom:20px;
+}
+
+.product-tag{
+  color:var(--accent);
+  text-transform:uppercase;
+  font-size:11px;
+  letter-spacing:1.2px;
+  font-weight:800;
+}
+
+h2{
+  margin:8px 0 9px;
+  font-size:22px;
+}
+
+.description{
+  color:var(--muted);
+  line-height:1.55;
+  min-height:74px;
+}
+
+.price-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:20px;
+}
+
+.price{
+  font-weight:850;
+  font-size:23px;
+  margin:0;
+}
+
+button{
+  border:0;
+  border-radius:10px;
+  background:var(--accent);
+  color:#04121c;
+  font-weight:800;
+  padding:10px 14px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#8ce2ff;
+}
+
+footer{
+  margin-top:48px;
+  padding-top:22px;
+  border-top:1px solid #203b55;
+  color:#7495b1;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<main>
+
+  <header>
+    <span class="badge">DESK TECH · 2026 COLLECTION</span>
+
+    <h1>Atlas Forge</h1>
+
+    <p class="intro">
+      Practical technology and desk accessories designed to create a cleaner,
+      smarter and more comfortable workspace.
+    </p>
+  </header>
+
+  <section class="grid">
+
+    <article class="card">
+      <div class="image">⌨️</div>
+
+      <span class="product-tag">Wireless Gear</span>
+
+      <h2>Forge Mini Keyboard</h2>
+
+      <p class="description">
+        A compact rechargeable wireless keyboard designed for desktop setups,
+        tablets and travel workstations.
+      </p>
+
+      <div class="price-row">
+        <p class="price">$42.00</p>
+        <button type="button">View Product</button>
+      </div>
+    </article>
+
+
+    <article class="card">
+      <div class="image">💡</div>
+
+      <span class="product-tag">Workspace Lighting</span>
+
+      <h2>Halo Smart Desk Lamp</h2>
+
+      <p class="description">
+        Adjustable LED desk lighting with three color temperatures,
+        five brightness levels and touch controls.
+      </p>
+
+      <div class="price-row">
+        <p class="price">$29.50</p>
+        <button type="button">View Product</button>
+      </div>
+    </article>
+
+
+    <article class="card">
+      <div class="image">💻</div>
+
+      <span class="product-tag">Desk Setup</span>
+
+      <h2>Elevate Pro Stand</h2>
+
+      <p class="description">
+        A lightweight aluminum laptop stand that improves screen height,
+        airflow and desk organization for everyday work.
+      </p>
+
+      <div class="price-row">
+        <p class="price">$34.90</p>
+        <button type="button">View Product</button>
+      </div>
+    </article>
+
+  </section>
+
+  <footer>
+    BlackWater P1.8E · AI-assisted starter customized into an original catalog.
+  </footer>
+
+</main>
+
+</body>
+</html>
